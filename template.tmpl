@@ -1,0 +1,14 @@
+{{if eq .Status "firing"}}
+🔥🔥🔥 {{.Status | str_UpperCase}}
+{{end -}}
+{{if eq .Status "resolved"}}
+✅✅✅ {{.Status | str_UpperCase}}
+{{end }}
+{{- range $val := .Alerts }}
+-------------------------
+  Instance: {{ index $val.Labels "instance" }}
+  Alert: {{ index $val.Labels "alertname" }}
+  Application: {{ index $val.Labels "application_type" }}
+  Severity: {{ index $val.Labels "severity" }}
+  Description: {{ index $val.Annotations "description" }}
+{{- end -}}

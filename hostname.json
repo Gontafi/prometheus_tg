@@ -1,0 +1,17 @@
+{
+    "10.128.0.79:9187": "PostgreSQL {Prosklad}",
+    "109.233.108.180:9187": "PostgreSQL {Nurkassa}",
+    "37.150.215.93:9187": "PostgreSQL {WiponKassa}",
+    "10.128.0.51:9100": "Prosklad-Srv {Proxy,PgBouncer}",
+    "10.128.0.71:9100": "Prosklad-Srv {Redis}",
+    "10.128.0.81:9100": "Prosklad-Srv {BackEnd}",
+    "37.150.215.94:9200": "WiponKassa-Srv {BackEnd}",
+    "37.150.215.93:9099": "WiponKassa-Srv {Database}",
+    "10.128.0.79:9100": "Prosklad-Srv {Database}",
+    "109.233.108.179:9100": "Nurkassa-Srv {Backend}",
+    "109.233.108.180:9100": "Nurkassa-Srv {Database}",
+    "10.128.0.71:9121": "Redis {Prosklad}",
+    "109.233.108.179:9121": "Redis {Nurkassa}",
+    "10.128.0.81:9200": "PHP {Prosklad}",
+    "89.219.34.205:9100": "LOAD BACKEND"
+}

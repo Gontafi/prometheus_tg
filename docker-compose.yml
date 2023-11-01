@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  discord-alerts:
+    build: .
+    container_name: prosklad-discord2
+    image: discord:3.0
+    tty: true
+    ports:
+      - 9095:9094
+    networks:
+      - api
+
+networks:
+  api:
+    driver: bridge
